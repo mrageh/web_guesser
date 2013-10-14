@@ -1,5 +1,9 @@
 require "sinatra"
 
+def random_num_generator
+  "The SECRET NUMBER is #{rand(100)}"
+end
+
 get '/' do
-  "Hello, World!"
+  random_num_generator
 end
