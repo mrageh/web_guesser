@@ -1,9 +1,13 @@
 <html>
   <head>
     <title></title>
+    <style>
+    body {background: <%= color %>;}
+    </style>
   </head>
   <body>
     <p><%= message %></p>
+    <p><%= counter %></p>
     <form>
       <input type='text' name='guess' />
       <input type='submit' value='Guess!' />
